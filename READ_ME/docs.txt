@@ -53,12 +53,12 @@ down.
         I used this opportunity to show some more skills in JS and also show I
         have an eye for creating usable interfaces, the colour part of it may be
         seen as a bloat feature however even with a textual representation next
-        to the gallery gives the user another representation of the product in a
+        to the gallery it provides the user with another representation of the product in a
         far nicer way than a dropdown. With the global array I have left it open
         for expansability reasons allowing easy addition of new flavours, even
         with the option to add more options for each flavour (so in future each
         flavour could be assigned a URL for an image for example), there is room
-        for improvement.
+        for expansion in future.
 
     iii. Quantity Real-Time Validation-
         For the quantity where a user enters a number to represent the

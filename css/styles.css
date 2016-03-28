@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px; }
 
 .price-banner {
-  display: block;
+  display: none;
   height: 50px;
   width: 100%;
   text-align: center; }
@@ -461,6 +461,9 @@ label.custom-select {
   .rating {
     text-align: left;
     margin: 0; }
+
+  .price-banner {
+    display: block; }
 
   .extra-info {
     display: block; } }
