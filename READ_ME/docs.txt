@@ -1,0 +1,151 @@
+*******************************************************************************************************************************************
+                                                        IMPACT WHEY PROTEIN
+                                                      **********************
+                                                            MY PROTEIN
+                                                      **********************
+                                                           Kieran Wild
+*******************************************************************************************************************************************
+
+I inspected the current whey protein web page and analysed the code. I decided to create the web page all hand coded from scratch using the
+coding style I felt correct for the page. I have avoided any plugins/frameworks etc, also written vanilla JavaScript. I have made the website
+as efficent and code as clean as possible.
+
+
+**********************
+      REASONING
+**********************
+1. GALLERY ----------------------------------
+    i. Slideshow gallery-
+        I created a slideshow with navigation features (next/previous), I aimed
+        to create a simple easy to use slideshow which takes up minimal room on
+        the interface while still providing useful functionality for users.
+        On hover there is a magnifying glass to show users when they click the
+        image the image will be shown in higher resolution. It is also worth mentioning
+        I have put in some filler images which are just other images from different
+        products found on the main site. I also added an extra usability feature
+        which allows use of left and right arrow to navigate through the images
+        in the slideshow quicker.
+
+    ii. Modal-
+        The modal is a pop up media gallery that provides a thumbnail layout
+        to change the large image and navigate between the different graphics.
+
+
+
+2. FORM -------------------------------------
+    i. Prices-
+        In terms of the JS I created an associative array in order to calculate
+        prices efficently. It works in a way where I read the value of the
+        select element chosen and then directly use this to get the correct
+        price from the associative array.....
+            EXAMPLE ENTRY ('prices["unflav-1"] = 12.69;')
+
+    ii. Flavour & Weight Graphical Representation-
+        I felt as an extra touch to the site to introduce an elegant
+        graphical visualisation which shows the chosen flavour and amount, the
+        flavour is assigned a colour, this could be a global array used across
+        all product pages. The idea is to assign a colour to a flavour and show
+        it within a graphic type interface, also I created a weight graphic which
+        has text within showing the current bag size the user has chosen.
+        I used this opportunity to show some more skills in JS and also show I
+        have an eye for creating usable interfaces, the colour part of it may be
+        seen as a bloat feature however even with a textual representation next
+        to the gallery gives the user another representation of the product in a
+        far nicer way than a dropdown. With the global array I have left it open
+        for expansability reasons allowing easy addition of new flavours, even
+        with the option to add more options for each flavour (so in future each
+        flavour could be assigned a URL for an image for example), there is room
+        for improvement.
+
+    iii. Quantity Real-Time Validation-
+        For the quantity where a user enters a number to represent the
+        amount they want I added some JS into the HTML which checks the
+        charCode of the key pressed and only allows number values.
+
+
+
+3. STYLING ----------------------------------
+    i. Responsiveness-
+        As you will see with my CSS I have implemented a 3 column layout, each column adapts
+        down as I have used percentage width to ensure the columns fill the screen properly
+        across all resolutions. I have 2 media queries in place:
+            - 700px & 1099px resolution (Tablet, Notebook/Small Laptop)
+            - 1100px onwards resolution (Desktop)
+
+        The site has been created mobile first so all the styles are catered to mobile
+        initially with the media queries triggering changes to the 3 column layout.
+
+        With the 700px-1099px layout I was able to make it so that the buying panel and the
+        gallery are the two columns with the 'You May Also Like...' below with a horizontal
+        list of products as appose to the side bar vertical list.
+
+    ii. SASS-
+        During this short space of time I have also learnt how to use SASS, I thoroughly
+        enjoyed using this and have setup styles using an SCSS file. I am thankful for this
+        as the integration of variables and extends make managing a large CSS file much
+        easier.
+
+
+
+**********************
+        ISSUES
+**********************
+1. FONTS ------------------------------------
+    The first issue was surrounding fonts, I tried to get my fonts as close to
+    the ones used on the actual website. I have used web safe fonts as I noticed
+    a font you used is paid online and I couldnt gain access, however I have shown
+    in 'styles.css' how I would implement external fonts to work on IE8+ (the
+    commented code at the top of the file for '@font-face'). It is also worth
+    mentioning that the font used on the weight images ('1kg', '2.5kg' & '5kg')
+    all use a font I found free online, I have left a copy of this within the CSS
+    folder as I did feel that font would go well with the current theme of the
+    site.
+
+
+
+2. UNIT TESTING -----------------------------
+    Unit testing is something I spoke about in the interview, in the last 5 weeks
+    at University I earnt a badge for TDD for which I used QUnit to write tests.
+    I have worked hard on this task and made use of Jasmine, I have used unit
+    testing to the best of my ability, however I feel it is worth mentioning I am
+    new to it so am still getting the grasp of it. I have done some research
+    around both selinum and Jasmine. I found the unit testing the most complicated
+    of the tasks given as I say I am new to it however am eager to learn how to
+    write them properly, I however struggled writing any liable tests for my
+    JS functions as they don't return any values and without using Jquery fixtures
+    I would be unable to write any sufficent tests. I remember you mentioning
+    Selinum in the interview and after this task I will be looking into it
+    more and understanding more of the underlying concepts of unit testing and
+    browser automation. I found the code written was too basic to test however
+    in order to show I understand and have used unit testing I have applied two
+    folders on github, one with the unit testing I completed at university the
+    other with this project. With the JS files for the university project as you
+    can see it was more testable simply due to the fact we were using classes which
+    hold variables and all functions return values.
+
+
+
+3. IE8 -------------------------------------
+    In IE8 I had trouble due to the fact it doesnt support media queries, I have
+    two proposed fixes, the first makes use of respond.js allowing media queries
+    in IE8 however it is an external JS file and may not be necessary. The other
+    more lightweight fix would be the following code... '<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="../css/ie8-styles.css" />
+    <![endif]-->' ... This says that when on IE8 use another stylesheet (however
+    this would mean the site wouldnt support media queries on IE8 so would have
+    to use percentages and would scale to a point, however the media query breaks
+    wouldnt work). In the end I have used the respond.js (it has to be run on a
+    server in order to work....I used localhost for testing that). However I just
+    wanted to propose my more lightweight fix too. The site works across all
+    browsers IE9+, however this respond is in place to workaround the IE8 issue.
+
+    Another issue with IE8 is the incompatibility of CSS3, for this I have used
+    PIE, PIE stands for Progressive Internet Explorer. It is an IE attached
+    behavior which, when applied to an element, allows IE to recognize and
+    display a number of CSS3 properties. This again only works when the site is
+    hosted on a server (I used XAMPP to create a local host).
+
+*****************************************************************************************************************************************
+                                                       Coded by Kieran Wild
+
+*****************************************************************************************************************************************
