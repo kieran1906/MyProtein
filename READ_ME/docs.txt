@@ -118,11 +118,11 @@ down.
     I would be unable to write any sufficent tests. I remember you mentioning
     Selinum in the interview and after this task I will be looking into it
     more and learning the underlying concepts of unit testing and
-    browser automation. I found the code written was too basic to test however
+    browser automation. I found the code written was too basic to test at times however
     in order to show I understand and have used unit testing I have uploaded another
-    folders on github, one with the unit testing I completed at university, thee JS files
-    for the university project as you were more testable simply due to the fact we were using classes which
-    hold variables and all functions return values or some sort of testable class attributes.
+    folder on github containing the unit testing I completed at university, these JS files
+    for the university project as you can see were more testable simply due to the fact we were using classes which
+    hold variables and all functions return values or some sort of testable class attributes and are far more complicated.
     I am eager to learn more about unit testing and how you as a company use it in the real world.
 
 
