@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title QUnit | Kieran Wild
+    link(rel='stylesheet', href='//code.jquery.com/qunit/qunit-1.21.0.css')
+  body
+    script(src='//code.jquery.com/qunit/qunit-1.21.0.js')
+    div#qunit
+    div#qunit-fixture
+
+    include MODAL_fridge
+
+    include SCRIPTS_strat
+    include SCRIPTS_services
+    script(src='/js/qunit/fridge.js')
+    script(src='js/qunit/water-strat.js')
