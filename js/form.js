@@ -52,7 +52,7 @@ function formChange() {
     var amountValue = document.getElementById('amount-select').value;
 
     // lookup price in array then change the price on screen
-    document.getElementById('product-price').innerHTML = prices[flavourValue + '-' + amountValue];
+    document.getElementById('product-price').innerHTML = "£" + prices[flavourValue + '-' + amountValue];
 
 
     // update graphical visualisation for flavour and amount

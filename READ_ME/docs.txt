@@ -10,6 +10,9 @@ I inspected the current whey protein web page and analysed the code. I decided t
 coding style I felt correct for the page. I have avoided any plugins/frameworks etc, also written vanilla JavaScript. I have made the website
 as efficent and code as clean as possible.
 
+If you scale the site down from a high resolution you will see the responsive 3 column layout and the break points to snap the columns
+down.
+
 
 **********************
       REASONING
@@ -127,8 +130,8 @@ as efficent and code as clean as possible.
 
 3. IE8 -------------------------------------
     In IE8 I had trouble due to the fact it doesnt support media queries, I have
-    two proposed fixes, the first makes use of respond.js allowing media queries
-    in IE8 however it is an external JS file and may not be necessary. The other
+    two proposed fixes, the first makes use of respond.js (this is the method implemented)
+    allowing media queries in IE8 however it is an external JS file and may not be necessary. The other
     more lightweight fix would be the following code... '<!--[if lt IE 9]>
     <link type="text/css" rel="stylesheet" href="../css/ie8-styles.css" />
     <![endif]-->' ... This says that when on IE8 use another stylesheet (however
