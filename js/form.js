@@ -89,6 +89,7 @@ function addToBasket() {
         alert("Invalid quantity value must be at least 1: '" + quantityValue + "'");
     }
 
+    alert("Added '" + quantityValue + "' to the basket");
     /*
     THIS IS WHERE THE CODE WOULD BE TO HANDLE ADDING TO BASKET
     */
