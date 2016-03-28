@@ -109,8 +109,7 @@ down.
 2. UNIT TESTING -----------------------------
     Unit testing is something I spoke about in the interview, in the last 5 weeks
     at University I earnt a badge for TDD for which I used QUnit to write tests.
-    I have worked hard on this task and made use of Jasmine, I have used unit
-    testing to the best of my ability, however I feel it is worth mentioning I am
+    I have worked hard on this task and made use of Jasmine, however I feel it is worth mentioning I am
     new to it so am still getting the grasp of it. I have done some research
     around both selinum and Jasmine. I found the unit testing the most complicated
     of the tasks given as I say I am new to it however am eager to learn how to
@@ -118,13 +117,13 @@ down.
     JS functions as they don't return any values and without using Jquery fixtures
     I would be unable to write any sufficent tests. I remember you mentioning
     Selinum in the interview and after this task I will be looking into it
-    more and understanding more of the underlying concepts of unit testing and
+    more and learning the underlying concepts of unit testing and
     browser automation. I found the code written was too basic to test however
-    in order to show I understand and have used unit testing I have applied two
-    folders on github, one with the unit testing I completed at university the
-    other with this project. With the JS files for the university project as you
-    can see it was more testable simply due to the fact we were using classes which
-    hold variables and all functions return values.
+    in order to show I understand and have used unit testing I have uploaded another
+    folders on github, one with the unit testing I completed at university, thee JS files
+    for the university project as you were more testable simply due to the fact we were using classes which
+    hold variables and all functions return values or some sort of testable class attributes.
+    I am eager to learn more about unit testing and how you as a company use it in the real world.
 
 
 
