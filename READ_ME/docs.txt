@@ -32,8 +32,7 @@ down.
     ii. Modal-
         The modal is a pop up media gallery that provides a thumbnail layout
         to change the large image and navigate between the different graphics.
-
-Hello
+        
 
 2. FORM -------------------------------------
     i. Prices-
