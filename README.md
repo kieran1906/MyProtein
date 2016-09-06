@@ -1,7 +1,4 @@
-# MyProtein
-The Hut Group Task
-Interview task to recreate the Myprotein
-impact whey protein product page making
-it responsive to different resolutions
-without the use of several pages for
-different devices.
+#MyProtein Task
+The Hut Group Interview task-
+Recreate the My Protein impact whey protein product page making it responsive to
+different resolutions without the use of several code bases for different devices.
