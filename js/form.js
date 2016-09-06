@@ -22,7 +22,6 @@ flavourColours["Unflavoured"] = {
     background: "#ead9ed",
     border: "#8c828e"
 };
-
 flavourColours["Chocolate"] = {
     background: "#D2691E",
     border: "#2a1506"
