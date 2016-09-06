@@ -64,7 +64,6 @@ document.onkeydown = function(e) {
 
 
 
-
  // Get the modal
  var modal = document.getElementById('image-modal');
 
