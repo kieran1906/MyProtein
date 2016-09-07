@@ -74,6 +74,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font_0, $font_1, $font_2, $font_3;
 }
 
+nav {
+	width: 100%;
+	margin:0 auto;
+}
+
 #header-content {
 	width: 100%;
 	margin: 0 auto;
@@ -516,6 +521,10 @@ label.custom-select {
     Media Queries --------------------------------------------------------------
 */
 @media screen and(min-width: 1100px) {
+	nav {
+		width: 42%;
+		margin:0 auto;
+	}
 	#gallery-container {
 		width: 100%;
 	}
@@ -579,6 +588,10 @@ label.custom-select {
 	}
 }
 @media screen and(min-width: 758px) and(max-width:1099px) {
+	nav {
+		width: 50%;
+		margin:0 auto;
+	}
 	#left-column {
 		width: 40%;
 		float: left;
